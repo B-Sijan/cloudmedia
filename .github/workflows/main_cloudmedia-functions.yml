@@ -54,5 +54,5 @@ jobs:
         with:
           app-name: 'cloudmedia-functions'
           slot-name: 'Production'
-          package: '.'
+          package: '${{ github.workspace }}'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_26B63EBF6A0E412CAD32ED79878BAC89 }}
